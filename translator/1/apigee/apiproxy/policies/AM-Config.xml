@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage continueOnError="false" enabled="true" name="AM-Config">
+    <DisplayName>AM-Config</DisplayName>
+    <Properties/>
+    <AssignVariable>
+        <Name>ENDPOINT_ID</Name>
+        <Value>5828176887305732096</Value>
+        <Ref/>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>PROJECT_ID</Name>
+        <Value>apigeex-talanki</Value>
+        <Ref/>
+    </AssignVariable>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <AssignTo createNew="false" transport="http" type="request"/>
+</AssignMessage>

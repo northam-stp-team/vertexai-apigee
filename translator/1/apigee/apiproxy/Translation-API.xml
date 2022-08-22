@@ -1,0 +1,24 @@
+<APIProxy revision="14" name="Translation-API">
+    <DisplayName></DisplayName>
+    <Description>Translation API for Apigee Vertex AI demo</Description>
+    <CreatedAt>1660169836983</CreatedAt>
+    <LastModifiedAt>1660169836983</LastModifiedAt>
+    <BasePaths>/translation</BasePaths>
+    <Policies>
+        <Policy>add-cors</Policy>
+        <Policy>SA-ratelimiting</Policy>
+        <Policy>AM-Remove-API-Key</Policy>
+        <Policy>Verify-API-Key</Policy>
+        <Policy>AM-Config</Policy>
+        <Policy>JS-TargetRewrite</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources>
+        <Resource>jsc://JS-TargetRewrite.js</Resource>
+    </Resources>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+</APIProxy>
