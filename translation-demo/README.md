@@ -49,6 +49,6 @@ gcloud config set project ${PROJECT_ID}
 4. `cd` into each API proxy folder and deploy via mvn command
 ```
 cd apigee
-mvn clean install -Peval -Dbearer=$(gcloud auth print-access-token)
+mvn clean install -Peval -Dbearer=$(gcloud auth print-access-token) -DgoogleTokenEmail=${SERVICE_ACCOUNT_ID}@${PROJECT_ID}.iam.gserviceaccount.com
 
 ```
