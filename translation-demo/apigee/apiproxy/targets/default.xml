@@ -27,6 +27,7 @@
                 </Scopes>
             </GoogleAccessToken>
         </Authentication>
-        <URL>https://us-central1-aiplatform.googleapis.com/v1/projects/apigeex-talanki/locations/us-central1/endpoints/5828176887305732096:predict</URL>
+        <URL>{VERTEXAI_TRANSLATION_URL}</URL>
+        <!--URL>https://us-central1-aiplatform.googleapis.com/v1/projects/apigeex-talanki/locations/us-central1/endpoints/5828176887305732096:predict</URL-->
     </HTTPTargetConnection>
 </TargetEndpoint>
