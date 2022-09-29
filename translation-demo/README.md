@@ -1,4 +1,5 @@
 # Apigee
+
 Sample Apigee proxies for Translation service in Vertex AI integration
 
 Consists of following Apigee proxies:
@@ -53,3 +54,9 @@ cd apigee
 mvn clean install -Peval -Dbearer=$(gcloud auth print-access-token) -DgoogleTokenEmail=${SERVICE_ACCOUNT_ID}@${PROJECT_ID}.iam.gserviceaccount.com
 
 ```
+
+## If you don't have Apigee instance, you can get started here:
+* Access to a GCP project with a configured billing account
+* An Apigee X or Apigee hybrid instance with a publicly accessible endpoint
+  * Can provision an Apigee X evaluation instance following these [steps](https://cloud.google.com/apigee/docs/api-platform/get-started/eval-orgs)
+  * Technically, the Apigee endpoint does not need to be publicly accessible by using [service directoy for private network access](https://cloud.google.com/dialogflow/cx/docs/concept/webhook#sd), but that is beyond the scope of this demo
