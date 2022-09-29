@@ -19,7 +19,7 @@ The following steps rely on a [maven plugin for Apigee](https://github.com/apige
 1. Define variables
 ```
 # define vars
-PROJECT_ID=<project-id>
+export PROJECT_ID=<project-id>
 VERTEXAI_TRANSLATION_URL=<https://translation-endpoint-url>
 export APIGEE_ORG=<apigee-org>
 export APIGEE_ENV=<apigee-env>
@@ -29,6 +29,7 @@ export SERVICE_ACCOUNT_ID=<service-acc-email-id>
 echo $PROJECT_ID
 echo $APIGEE_ORG
 echo $APIGEE_ENV
+echo $PROJECT_ID
 
 ```
 
